@@ -1,0 +1,101 @@
+.list-group {
+  display: inline-block;
+  margin: 1em;
+  width: 95%;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.list-group-item {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.purple-bg {
+  background: #6a3093;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-bg {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #99ccff 67%, #ccffff 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #99ccff 67%, #ccffff 100%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pink-bg {
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff00cc, #333399);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff00cc, #333399);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.white-bg {
+  background-color: rgb(255, 255, 255);
+  padding: 2em 0;
+  width: 100%;
+  margin: auto;
+}
+
+.glyphicon-cloud {
+  font-size: 30px;
+  margin-top: 2px;
+  margin-left: 70%;
+  z-index: 10;
+  padding: 15px;
+  position: absolute;
+  color: #e1f5fe;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+#custom-button-edit {
+  color: white;
+  background: linear-gradient(to bottom, #66ff66 55%, #ffffff 100%);
+  position: absolute;
+  left: 10px;
+  bottom: -5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+#custom-button-remove {
+  color: white;
+  background: linear-gradient(to bottom, #ff9966 55%, #ffffff 100%);
+  position: absolute;
+  left: 60px;
+  bottom: -5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+#custom-button-reply {
+  color: white;
+  background: linear-gradient(to bottom, #0099cc 67%, #ccffff 100%);
+  position: absolute;
+  left: 110px;
+  bottom: -5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+#custom-button-edit:hover,
+#custom-button-remove:hover,
+#custom-button-reply:hover {
+  bottom: 5px;
+  transition-delay: easy;
+  transition-duration: 1s;
+}
