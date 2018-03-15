@@ -19,6 +19,8 @@
 	<link href="../../../css/dashboard-styles.css"  rel="stylesheet">
 	<link href="../../../css/md-inv/servicios-styles-tabs.css" rel="stylesheet">
 	<link href="../../../css/md-inv/servicios-styles.css" rel="stylesheet">
+    <link href="../../../packages/datetimepicker/datepicker.css" rel="stylesheet">
+
 
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
@@ -34,6 +36,7 @@
 	<script src="../../../js/toastr.min.js"></script>
 	<script src="../../../js/dashboard-scripts.js"></script>
 	<script src="../../../js/md-inv/servicios-scripts.js"></script>
+    <script src="../../../packages/datetimepicker/bootstrap-datepicker.js"></script>
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 		
@@ -91,12 +94,33 @@
                                     <div class="list-group">
                                         <a class="list-group-item active blue-bg" style="height: 280px;">
                                             <div class="row">
-                                                <div class="col-sm-3">
-                                                    <span class="fa fa-user fa-5x" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <h5>CONTRATO</h5>
-                                                    <p>Vencimiento</p>
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label>Contrato:</label>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="form-control" value="70004">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label>Vencimiento:</label>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <input type="date" class="form-control" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -105,6 +129,62 @@
                                                 <button id="custom-button-remove" class="btn button-info custom-button"><i class="fa fa-trash"></i></button>
                                             </div>
                                         </a>
+                                    </div>
+                                </div>
+
+                                <div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
+                                    <div class="[ info-card ]">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label>Contrato:</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" class="form-control" value="70004">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label>Vencimiento:</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="date" class="form-control" aria-describedby="basic-addon3">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="[ info-card-details ] animate">
+                                            <div class="[ info-card-header ]">
+                                                <h1> Robert McIntosh </h1>
+                                                <h3> aka Mouse0270 </h3>
+                                            </div>
+                                            <div class="[ info-card-detail ]">
+                                                <!-- Description -->
+                                                <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+                                                    <a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+                                                    <a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+                                                    <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+                                                    <a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
     						</div>
