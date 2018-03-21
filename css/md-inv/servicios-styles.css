@@ -1,243 +1,28 @@
-.list-group {
-  display: inline-block;
-  margin: 1em;
-  width: 95%;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+.servicebox, .servicebox-back{
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    border-radius: 1%;
+    max-width: 350px;
+    min-height: 244px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    padding-bottom: 1%;
+    margin: 1%;
+   
 }
-
-.list-group-item {
-  margin: auto;
-  display: block;
-  width: 100%;
+.servicebox i{
+    margin-bottom: 0%;
+    margin-right: 3%;
+    padding: -4%;
+    float: left;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  z-index: 2;
-  color: #fff;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.purple-bg {
-  background: #6a3093;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #a044ff, #6a3093);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.blue-bg {
-  background: #00d2ff;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #99ccff 67%, #ccffff 100%);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #99ccff 67%, #ccffff 100%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.pink-bg {
-  background: #ff00cc;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff00cc, #333399);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff00cc, #333399);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.white-bg {
-  background-color: rgb(255, 255, 255);
-  padding: 2em 0;
-  width: 100%;
-  margin: auto;
-}
-
-.glyphicon-cloud {
-  font-size: 30px;
-  margin-top: 2px;
-  margin-left: 70%;
-  z-index: 10;
-  padding: 15px;
-  position: absolute;
-  color: #e1f5fe;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-}
-
-#custom-button-edit {
-  color: white;
-  background: linear-gradient(to bottom, #66ff66 55%, #ffffff 100%);
-  position: absolute;
-  left: 110px;
-  bottom: -5px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-}
-
-#custom-button-remove {
-  color: white;
-  background: linear-gradient(to bottom, #ff9966 55%, #ffffff 100%);
-  position: absolute;
-  left: 60px;
-  bottom: -5px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-}
-
-#custom-button-reply {
-  color: white;
-  background: linear-gradient(to bottom, #0099cc 67%, #ccffff 100%);
-  position: absolute;
-  left: 10px;
-  bottom: -5px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-}
-
-#custom-button-edit:hover,
-#custom-button-remove:hover,
-#custom-button-reply:hover {
-  bottom: 5px;
-  transition-delay: easy;
-  transition-duration: 1s;
-}
-
-
-/* Estilos de las tarjetas */
-@import url(//fonts.googleapis.com/css?family=Lato:400,900);
-    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-    body {
-        padding: 60px 0px;
-    }
-    .animate {
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-    .info-card {
-        width: 100%;
-        border: 1px solid rgb(215, 215, 215);
-        position: relative;
-        font-family: 'Lato', sans-serif;
-        margin-bottom: 20px;
-        overflow: hidden;
-    }
-    .info-card > img {
-        width: 100px;
-        margin-bottom: 60px;
-    }
-    .info-card .info-card-details,
-    .info-card .info-card-details .info-card-header  {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        padding: 0 15px;
-        background: rgb(255, 255, 255);
-        text-align: center;
-    }
-    .info-card .info-card-details::-webkit-scrollbar {
-        width: 8px;
-    }
-    .info-card .info-card-details::-webkit-scrollbar-button {
-        width: 8px;
-        height: 0px;
-    }
-    .info-card .info-card-details::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    .info-card .info-card-details::-webkit-scrollbar-thumb {
-        background: rgb(160, 160, 160);
-    }
-    .info-card .info-card-details::-webkit-scrollbar-thumb:hover {
-        background: rgb(130, 130, 130);
-    }           
-
-    .info-card .info-card-details .info-card-header {
-        height: auto;       
-        bottom: 100%;
-        padding: 10px 5px;
-    }
-    .info-card:hover .info-card-details {
-        bottom: 0px;
-        overflow: auto;
-        padding-bottom: 25px;
-    }
-    .info-card:hover .info-card-details .info-card-header {
-        position: relative;
-        bottom: 0px;
-        padding-top: 45px;
-        padding-bottom: 25px;
-    }
-    .info-card .info-card-details .info-card-header h1, 
-    .info-card .info-card-details .info-card-header h3 {
-        color: rgb(62, 62, 62);
-        font-size: 22px;
-        font-weight: 900;
-        text-transform: uppercase;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    .info-card .info-card-details .info-card-header h3 {
-        color: rgb(142, 182, 52);
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 5px;
-    }
-    .info-card .info-card-details .info-card-detail .social {
-        list-style: none;
-        padding: 0px;
-        margin-top: 25px;
-        text-align: center;
-    }
-    .info-card .info-card-details .info-card-detail .social a {
-        position: relative;
-        display: inline-block;
-        min-width: 40px;
-        padding: 10px 0px;
-        margin: 0px 5px;
-        overflow: hidden;
-        text-align: center;
-        background-color: rgb(215, 215, 215);
-        border-radius: 40px;
-    }
-
-    a.social-icon {
-        text-decoration: none !important;
-        box-shadow: 0px 0px 1px rgb(51, 51, 51);
-        box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
-    }
-    a.social-icon:hover {
-        color: rgb(255, 255, 255) !important;
-    }
-    a.facebook {
-        color: rgb(59, 90, 154) !important;
-    }
-    a.facebook:hover {      
-        background-color: rgb(59, 90, 154) !important;
-    }
-    a.twitter {
-        color: rgb(45, 168, 225) !important;
-    }
-    a.twitter:hover {
-        background-color: rgb(45, 168, 225) !important;
-    }
-    a.github {
-        color: rgb(51, 51, 51) !important;
-    }
-    a.github:hover {
-        background-color: rgb(51, 51, 51) !important;
-    }
-    a.google-plus {
-        color: rgb(244, 94, 75) !important;
-    }
-    a.google-plus:hover {
-        background-color: rgb(244, 94, 75) !important;
-    }
-    a.linkedin {
-        color: rgb(1, 116, 179) !important;
-    }
-    a.linkedin:hover {
-        background-color: rgb(1, 116, 179) !important;
-    }

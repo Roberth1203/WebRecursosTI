@@ -21,28 +21,18 @@
 	<link href="../../../css/md-inv/servicios-styles.css" rel="stylesheet">
     <link href="../../../packages/datetimepicker/datepicker.css" rel="stylesheet">
 
-
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-
 	<!-- Bootstrap core JavaScript-->
-    <script type="text/javascript" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	<script src="../../../js/jquery-3.3.1.min.js"></script>
 	<script src="../../../packages/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="../../../packages/jquery-easing/jquery.easing.min.js"></script>
-	<script src="../../../packages/datatables/jquery.dataTables.js"></script>
-	<script src="../../../packages/datatables/datatables.min.js"></script>
 	<script src="../../../js/sb-admin.min.js"></script>
 	
 	<script src="../../../js/toastr.min.js"></script>
 	<script src="../../../js/dashboard-scripts.js"></script>
 	<script src="../../../js/md-inv/servicios-scripts.js"></script>
-    <script src="../../../packages/datetimepicker/bootstrap-datepicker.js"></script>
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-		
 		<?php include('../navigationBar.php'); ?>
-		
-		</div>
 
 		<div class="content-wrapper">
     		<div class="container-fluid">
@@ -90,118 +80,62 @@
     				<div class="tab-content">
     					<div id="menu1" class="tab-pane fade show active menu-tab">
     						<div class="row">
-                                <div class="col-md-4">
-                                    <div class="list-group">
-                                        <a class="list-group-item active blue-bg" style="height: 280px;">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <label>Contrato:</label>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" class="form-control" value="70004">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <label>Vencimiento:</label>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="date" class="form-control" aria-describedby="basic-addon3">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="col-md-4 servicebox">
+                                    <div id="accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <h5>
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                    </button>
+                                                    No. Contrato
+                                                </h5>
+                                            </h5>
                                             </div>
-                                            <div class="row">
-                                                <button id="custom-button-reply" class="btn button-info custom-button"><i class="fa fa-reply"></i></button>
-                                                <button id="custom-button-edit" class="btn button-info"><i class="fa fa-pencil"></i></button>
-                                                <button id="custom-button-remove" class="btn button-info custom-button"><i class="fa fa-trash"></i></button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
 
-                                <div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
-                                    <div class="[ info-card ]">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label>Contrato:</label>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <input type="text" class="form-control" value="70004">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label>Vencimiento:</label>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <input type="date" class="form-control" aria-describedby="basic-addon3">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
-                                                    </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="[ info-card-details ] animate">
-                                            <div class="[ info-card-header ]">
-                                                <h1> Robert McIntosh </h1>
-                                                <h3> aka Mouse0270 </h3>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <i class="fa fa-chevron-down"></i>
+                                                    </button>
+                                                    Ver detalles
+                                                </h5>
                                             </div>
-                                            <div class="[ info-card-detail ]">
-                                                <!-- Description -->
-                                                <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
-                                                <div class="social">
-                                                    <a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-
-                                                    <a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
-
-                                                    <a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-
-                                                    <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
-
-                                                    <a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <button type="button" class="btn btn-primary btn-block">
+                                        Mostrar Detalles
+                                    </button>
                                 </div>
-    						</div>
+                            </div>
     					</div>
     					<div id="menu2" class="tab-pane fade menu-tab">
     						<div class="row">
-    								
+                                <p>content</p>
     						</div>
     					</div>
     					<div id="menu3" class="tab-pane fade menu-tab">
     						<div class="row">
-    							
+    							<p>content</p>
     						</div>
     					</div>
     					<div id="menu4" class="tab-pane fade menu-tab">
     						<div class="row">
-    								
+    							<p>content</p>
     						</div>
     					</div>
     				</div>
@@ -604,41 +538,7 @@
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-body">
-                      <table id="example" class="display" cellspacing="0" width="100%">
-                          <thead>
-                            <tr>
-                                <th>Contrato</th>
-                                <th>Titulo</th>
-                                <th>Inició</th>
-                                <th>Termina</th>
-                                <th>Teléfono</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                              <?php include('listServicios.php'); ?>
-                          </tbody>
-                      </table>
-
-                      <script type="text/javascript">
-                          $(document).ready(function() {
-                            $("#example").DataTable({
-                                responsive: {
-                                    details: true
-                                },
-                                "scrollY":        "200px",
-                                "scrollCollapse": true,
-                                "paging":         false,
-                                "info":           false,
-                                "language": {
-                                    "zeroRecords": "No se han encontrado resultados",
-                                    "info": "Mostrando page _PAGE_ de _PAGES_",
-                                    "infoEmpty": "No se han encontrado servicios",
-                                    "search": "Buscar:",
-                                    "infoFiltered": "(Filtrados de _MAX_ registros encontrados)"
-                                }
-                            });
-                          });
-                      </script>
+                      
                   </div>
                   <div class="modal-footer">
                     <button class="btn btn-info" class="close" data-dismiss="modal" aria-label="Close" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><i class="fa fa-times"></i> Cerrar</button>
