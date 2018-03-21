@@ -13,6 +13,7 @@
     -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    padding-top: 1%;
     padding-bottom: 1%;
     margin: 1%;
    
@@ -25,4 +26,10 @@
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.service-primary-info, .service-secondary-info {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 400px;
 }
